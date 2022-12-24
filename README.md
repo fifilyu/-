@@ -12,7 +12,7 @@ Spring Boot + Spring Security + Thymeleaf + MySQL数据库的Spring Boot示例�
 2. 用户登录
 3. 用户注销
 
-## 运行项目
+## 测试运行
 
 ### 系统要求
 
@@ -33,6 +33,11 @@ Spring Boot + Spring Security + Thymeleaf + MySQL数据库的Spring Boot示例�
 
 ### 部署发布
 
+### 系统要求
+
+* Java 11+
+* MySQL 5.7+
+
 ### 操作一、Linux服务器
 
 1. 在MySQL中创建生产数据库：`spring-boot-security-thymeleaf-mysql-demo`
@@ -41,9 +46,9 @@ Spring Boot + Spring Security + Thymeleaf + MySQL数据库的Spring Boot示例�
 ### 操作二、本地
 
 1. 进入项目目录
-2. 上传Jar文件到服务器：`scp src/main/resources/application.properties.sample root@server:/data/web/application.properties`
+2. 上传配置文件到服务器：`scp src/main/resources/application.properties.sample root@{服务器IP地址}:/data/web/application.properties`
 3. 打包Jar文件：`mvn package`
-4. 上传Jar文件到服务器：`scp target/spring-boot-security-thymeleaf-mysql-demo-0.0.1-SNAPSHOT.jar root@server:/data/web/`
+4. 上传Jar文件到服务器：`scp target/spring-boot-security-thymeleaf-mysql-demo-0.0.1-SNAPSHOT.jar root@{服务器IP地址}:/data/web/`
 
 ### 操作三、Linux服务器
 
