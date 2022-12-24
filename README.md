@@ -2,7 +2,7 @@
 
 ## 介绍
 
-Spring Boot + Spring Security + Thymeleaf + MySQL数据库的Java实例项目
+Spring Boot + Spring Security + Thymeleaf + MySQL数据库的Spring Boot示例项目
 
 本项目基于 [registration-login-spring-boot-security-thymeleaf](https://github.com/knowledgefactory4u/registration-login-spring-boot-security-thymeleaf) 。
 
