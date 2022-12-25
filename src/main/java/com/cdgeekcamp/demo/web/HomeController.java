@@ -1,7 +1,10 @@
 package com.cdgeekcamp.demo.web;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+
+import javax.servlet.http.HttpSession;
 
 @Controller
 public class HomeController {
@@ -12,7 +15,10 @@ public class HomeController {
     }
 
     @GetMapping("/")
-    public String home() {
+    public String home(Model model, HttpSession session) {
+        String login_time = (String) session.getAttribute("LOGIN_TIME");
+        model.addAttribute("loginTime", login_time);
+
         return "index";
     }
 }

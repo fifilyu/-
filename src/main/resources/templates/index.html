@@ -11,6 +11,8 @@
 .navbar {
 	background-color: green;
 }
+
+
 </style>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -25,9 +27,12 @@
             </button>
             <a class="navbar-brand" href="#" th:href="@{/}">首页</a>
         </div>
-        <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-collapse collapse" id="navbar">
             <ul class="nav navbar-nav">
                 <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">注销</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li sec:authorize="isAuthenticated()"><a href="#">登录时间：<span th:text="${loginTime}"/></a></li>
             </ul>
         </div>
     </div>

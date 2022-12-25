@@ -12,12 +12,13 @@ Spring Boot + Spring Security + Thymeleaf + MySQL数据库的Spring Boot示例�
 2. 用户登录
 3. 用户注销
 
-## 测试运行
-
-### 系统要求
+## 系统要求
 
 * Java 11+
 * MySQL 5.7+
+* Redis 3.2+
+
+## 测试运行
 
 ### 运行步骤
 
@@ -32,11 +33,6 @@ Spring Boot + Spring Security + Thymeleaf + MySQL数据库的Spring Boot示例�
 6. 在浏览器中访问URL： http://localhost:8080
 
 ### 部署发布
-
-### 系统要求
-
-* Java 11+
-* MySQL 5.7+
 
 ### 操作一、Linux服务器
 
