@@ -48,7 +48,7 @@ Spring Boot + Spring Security + Thymeleaf + MySQL数据库的Spring Boot示例�
 
 ### 操作三、Linux服务器
 
-1. 修改 */data/web/application.properties* 文件中的数据库连接参数；
+1. 修改 */data/web/application.properties* 文件中的数据库和Redis连接参数；
 2. 测试运行 `java -Dspring.config.location=/data/web/application.properties -jar /data/web/spring-boot-security-thymeleaf-mysql-demo-0.0.1-SNAPSHOT.jar`
 3. 创建Java系统服务(`SysV init scripts` 或者 `systemd`)，如CentOS7配置后使用 `systemtcl start spring-boot-security-thymeleaf-mysql-demo` 启动
    1. 具体配置方式本文不详细说明，请参考相关教程
