@@ -86,6 +86,31 @@
 			<groupId>org.springframework.session</groupId>
 			<artifactId>spring-session-data-redis</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>com.talanlabs</groupId>
+			<artifactId>avatar-generator</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.talanlabs</groupId>
+			<artifactId>avatar-generator-smiley</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.talanlabs</groupId>
+			<artifactId>avatar-generator-8bit</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.talanlabs</groupId>
+			<artifactId>avatar-generator-cat</artifactId>
+			<version>1.1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>fifilyu</groupId>
+			<artifactId>happy-java</artifactId>
+			<version>0.0.1</version>
+		</dependency>
 	</dependencies>
 
 	<build>

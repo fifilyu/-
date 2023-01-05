@@ -19,6 +19,9 @@ public class HomeController {
         String login_time = (String) session.getAttribute("LOGIN_TIME");
         model.addAttribute("loginTime", login_time);
 
+        String photo = (String) session.getAttribute("PHOTO");
+        model.addAttribute("photo", photo);
+
         return "index";
     }
 }
