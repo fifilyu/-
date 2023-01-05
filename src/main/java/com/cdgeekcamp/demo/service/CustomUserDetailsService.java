@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.stream.Collectors;
 
+@SuppressWarnings("unused")
 @Service
 public class CustomUserDetailsService implements UserDetailsService {
     @Autowired

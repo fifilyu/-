@@ -4,8 +4,6 @@ import happyjava.HappyLog;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
-import java.io.File;
-
 @SuppressWarnings("unused")
 @Configuration
 public class ApplicationConfig {

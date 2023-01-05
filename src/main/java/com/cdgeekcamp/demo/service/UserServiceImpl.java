@@ -12,9 +12,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@SuppressWarnings("unused")
 @Service
 public class UserServiceImpl implements UserService {
-
     @Autowired
     private UserRepository userRepository;
 

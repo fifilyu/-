@@ -6,9 +6,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.servlet.http.HttpSession;
 
+@SuppressWarnings("unused")
 @Controller
 public class HomeController {
-
     @GetMapping("/login")
     public String login() {
         return "login";

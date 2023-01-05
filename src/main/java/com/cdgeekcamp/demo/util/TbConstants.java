@@ -1,7 +1,7 @@
 package com.cdgeekcamp.demo.util;
 
 public class TbConstants {
-    public static interface Roles {
+    public interface Roles {
         String USER = "ROLE_USER";
     }
 }

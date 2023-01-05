@@ -10,6 +10,7 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
+@SuppressWarnings("unused")
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration {
@@ -19,7 +20,7 @@ public class SecurityConfiguration {
     }
 
     @Bean
-    public AuthenticationSuccessHandler myAuthenticationSuccessHandler(){
+    public AuthenticationSuccessHandler myAuthenticationSuccessHandler() {
         return new LoginUrlAuthenticationSuccessHandler();
     }
 
@@ -27,21 +28,21 @@ public class SecurityConfiguration {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers("/registration**")
-                    .permitAll()
+                .permitAll()
                 .anyRequest()
-                    .authenticated()
+                .authenticated()
                 .and()
-                    .formLogin()
-                        .loginPage("/login")
-                            .successHandler(myAuthenticationSuccessHandler())
-                                .permitAll()
+                .formLogin()
+                .loginPage("/login")
+                .successHandler(myAuthenticationSuccessHandler())
+                .permitAll()
                 .and()
-                    .logout()
-                        .invalidateHttpSession(true)
-                            .clearAuthentication(true)
-                                .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
-                                    .logoutSuccessUrl("/login?logout")
-                                        .permitAll();
+                .logout()
+                .invalidateHttpSession(true)
+                .clearAuthentication(true)
+                .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                .logoutSuccessUrl("/login?logout")
+                .permitAll();
 
         return http.build();
     }

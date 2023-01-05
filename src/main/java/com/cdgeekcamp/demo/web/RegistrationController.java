@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.validation.Valid;
 
+@SuppressWarnings("unused")
 @Controller
 @RequestMapping("/registration")
 public class RegistrationController {
-
     @Autowired
     private UserService userService;
 
@@ -44,6 +44,7 @@ public class RegistrationController {
         }
 
         userService.save(userDto);
+
         return "redirect:/registration?success";
     }
 }
