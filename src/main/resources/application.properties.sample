@@ -1,7 +1,7 @@
 # JPA
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
-# 自动更新数据库表，如果不存在则创建
-spring.jpa.hibernate.ddl-auto=update
+# 每次启动都删除所有数据，重建数据库表（本程序主要目的是测试，所以使用create参数）
+spring.jpa.hibernate.ddl-auto=create
 # 必须启用open-in-view，否则无法使用注册功能
 spring.jpa.open-in-view=true
 # 数据库连接池
