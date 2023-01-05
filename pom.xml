@@ -5,7 +5,7 @@
 
 	<groupId>com.cdgeekcamp</groupId>
 	<artifactId>spring-boot-security-thymeleaf-mysql-demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 
 	<name>spring-boot-security-thymeleaf-mysql-demo</name>
 
