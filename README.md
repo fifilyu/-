@@ -35,7 +35,7 @@ Spring Boot + Spring Security + Thymeleaf + MySQL数据库的Spring Boot示例�
 5. 准备默认日志配置文件，复制配置文件模板（*logback.xml.sample*）为 *logback.xml*：
    1. 配置文件模板：src/main/resources/logback.xml.sample
    2. 默认配置文件：src/main/resources/logback.xml
-   3. 更新日志文件路径：`mkdir -p var/log && sed -i 's#/var/#var/' src/main/resources/logback.xml`
+   3. 更新日志文件路径：`sed -i 's#/var/#var/' src/main/resources/logback.xml`
 6. 运行项目：`mvn spring-boot:run`
 7. 在浏览器中访问URL： http://localhost:8080
 
