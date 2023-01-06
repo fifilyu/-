@@ -15,16 +15,12 @@ public class ApplicationConfig {
     public String getUserPhotoSaveDir() {
         final String separator = "/";
 
-        final String os = System.getProperty("os.name");
-
-        if (os.contains("Linux") && !userPhotoSaveDir.startsWith(separator))
-            userPhotoSaveDir = separator + userPhotoSaveDir;
-
+        // 尾部添加路径分隔符，表示一定是目录
+        // Linux: foobar/ or /foobar/
+        // Windows: D:/foobar/
         if (!userPhotoSaveDir.endsWith(separator))
             userPhotoSaveDir = userPhotoSaveDir + separator;
 
-        // Linux: /foobar/
-        // Windows: D:/foobar/
         return userPhotoSaveDir;
     }
 }
