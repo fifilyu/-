@@ -28,7 +28,7 @@ public class MvcConfig implements WebMvcConfigurer {
         File folder = new File(photoSavePath);
 
         if (!folder.exists()) {
-            if (!folder.mkdir()) {
+            if (!folder.mkdirs()) {
                 log.error("无法创建用户头像保存目录（" + photoSavePath + "）");
                 ctx.close();
             }
