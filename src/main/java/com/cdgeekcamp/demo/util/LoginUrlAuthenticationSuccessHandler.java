@@ -41,7 +41,7 @@ public class LoginUrlAuthenticationSuccessHandler implements AuthenticationSucce
         User existingUser = userService.findUserByEmail(userName);
 
         if (existingUser != null) {
-            session.setAttribute("USER_FULL_NAME", existingUser.getLastName() + " " + existingUser.getFirstName());
+            session.setAttribute("USER_NAME", existingUser.getName());
         }
 
         redirectStrategy.sendRedirect(request, response, "/");

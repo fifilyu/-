@@ -15,11 +15,8 @@ import javax.validation.constraints.NotEmpty;
 public class UserDto {
     private Long id;
 
-    @NotEmpty(message = "请输入有效的名")
-    private String firstName;
-
-    @NotEmpty(message = "请输入有效的姓")
-    private String lastName;
+    @NotEmpty(message = "请输入有效的姓名")
+    private String name;
 
     @NotEmpty(message = "请输入有效的电子邮箱")
     @Email

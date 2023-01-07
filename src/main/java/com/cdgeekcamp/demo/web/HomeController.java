@@ -22,8 +22,8 @@ public class HomeController {
         String photo = (String) session.getAttribute("PHOTO");
         model.addAttribute("photo", photo);
 
-        String user_full_name = (String) session.getAttribute("USER_FULL_NAME");
-        model.addAttribute("user_full_name", user_full_name);
+        String user_name = (String) session.getAttribute("USER_NAME");
+        model.addAttribute("user_name", user_name);
 
         return "index";
     }

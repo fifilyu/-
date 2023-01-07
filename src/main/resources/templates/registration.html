@@ -62,20 +62,12 @@
                             <!-- <form method="POST" class="register-form" id="register-form"> -->
                             <form method="POST" class="register-form" th:action="@{/registration}" th:object="${user}">
                                 <div class="form-group">
-                                    <label for="lastName"><i class="fa-solid fa-user"></i></label>
-                                    <input type="text" name="lastName" id="lastName" placeholder="姓" required
-                                        th:field="*{lastName}">
+                                    <label for="name"><i class="fa-solid fa-user"></i></label>
+                                    <input type="text" name="name" id="name" placeholder="姓名" required
+                                        th:field="*{name}">
                                 </div>
-                                <p class="text-danger" th:errors="*{lastName}" th:if="${#fields.hasErrors('lastName')}">
+                                <p class="text-danger" th:errors="*{name}" th:if="${#fields.hasErrors('name')}">
                                 </p>
-
-                                <div class="form-group">
-                                    <label for="firstName"><i class="fa-solid fa-user"></i></label>
-                                    <input type="text" name="firstName" id="firstName" placeholder="名" required
-                                        th:field="*{firstName}">
-                                </div>
-                                <p class="text-danger" th:errors="*{firstName}"
-                                    th:if="${#fields.hasErrors('firstName')}"></p>
 
                                 <div class="form-group">
                                     <label for="email"><i class="fa-solid fa-envelope"></i></label>
@@ -85,7 +77,7 @@
                                 <p class="text-danger" th:errors="*{email}" th:if="${#fields.hasErrors('email')}"></p>
 
                                 <div class="form-group">
-                                    <label for="pass"><i class="fa-solid fa-lock"></i></label>
+                                    <label for="password"><i class="fa-solid fa-lock"></i></label>
                                     <input type="password" name="password" id="password" placeholder="密码" required
                                         th:field="*{password}">
                                 </div>

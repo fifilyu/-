@@ -22,10 +22,8 @@ public class User {
     private Long id;
 
     @Column(nullable = false)
-    private String firstName;
+    private String name;
 
-    @Column(nullable = false)
-    private String lastName;
     @Column(nullable = false, unique = true)
     private String email;
     @Column(nullable = false)
@@ -38,9 +36,8 @@ public class User {
     )
     private List<Role> roles = new ArrayList<>();
 
-    public User(String firstName, String lastName, String email, String password, List<Role> roles) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+    public User(String name, String email, String password, List<Role> roles) {
+        this.name = name;
         this.email = email;
         this.password = password;
         this.roles = roles;
