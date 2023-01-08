@@ -59,6 +59,7 @@ spring.redis.jedis.pool.max-active=100
 spring.redis.jedis.pool.max-idle=8
 spring.redis.jedis.pool.max-wait=-1ms
 spring.redis.jedis.pool.min-idle=0
+# 实践星未使用Spring Data Redis时，启动有警告。设置为false只为消除启动警告
 spring.data.redis.repositories.enabled=false
 # 用户头像保存目录
 application.config.user-photo-save-dir=/var/lib/shi-jian-xing/images
