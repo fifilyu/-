@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.cdgeekcamp</groupId>
-	<artifactId>spring-boot-security-thymeleaf-mysql-demo</artifactId>
+	<artifactId>shi-jian-xing</artifactId>
 	<version>0.0.1</version>
 
-	<name>spring-boot-security-thymeleaf-mysql-demo</name>
+	<name>ShiJianXing</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
