@@ -1,7 +1,10 @@
 # JPA
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
-# 每次启动都删除所有数据，重建数据库表（本程序主要目的是测试，所以使用create参数）
-spring.jpa.hibernate.ddl-auto=create
+# 自动建表控制，none/create/update等等
+# 使用create模式时，第一次运行会报错，提示表不存在无法删除。虽然不影响使用，容易迷惑新手。使用schema.sql文件代替create
+spring.jpa.hibernate.ddl-auto=none
+# 查找到resources/schema.sql，执行SQL初始化数据表
+spring.sql.init.mode=always
 # 必须启用open-in-view，否则无法使用注册功能
 spring.jpa.open-in-view=true
 # 数据库连接池
@@ -17,6 +20,14 @@ spring.datasource.url=jdbc:mysql://localhost/shi-jian-xing
 spring.datasource.username=root
 # MySQL用户密码
 spring.datasource.password=foobar
+# 输出SQL语句
+spring.jpa.show-sql=true
+# 输出格式化SQL语句
+spring.jpa.properties.hibernate.format_sql=false
+# 打印SQL语句绑定的参数
+logging.level.org.hibernate.type.descriptor.sql.BasicBinder=TRACE
+# 打印SQL语句中每列的结果
+logging.level.org.hibernate.type.descriptor.sql.BasicExtractor=TRACE
 # Session配置
 spring.session.store-type=redis
 server.servlet.session.timeout=30m
