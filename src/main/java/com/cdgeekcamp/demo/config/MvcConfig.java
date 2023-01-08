@@ -3,10 +3,13 @@ package com.cdgeekcamp.demo.config;
 import happyjava.HappyLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.thymeleaf.templatemode.TemplateMode;
+import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 
 import java.io.File;
 
@@ -35,15 +38,28 @@ public class MvcConfig implements WebMvcConfigurer {
         }
 
         registry.addResourceHandler("/favicon.ico")
-                .addResourceLocations("classpath:/images/favicon.ico");
+                .addResourceLocations("classpath:/thymeleaf/images/favicon.ico");
 
         registry.addResourceHandler("/images/**")
-                .addResourceLocations("classpath:/images/", "file:" + photoSavePath);
+                .addResourceLocations("classpath:/thymeleaf/images/", "file:" + photoSavePath);
 
         registry.addResourceHandler("/css/**")
-                .addResourceLocations("classpath:/css/");
+                .addResourceLocations("classpath:/thymeleaf/css/");
 
         registry.addResourceHandler("/js/**")
-                .addResourceLocations("classpath:/js/");
+                .addResourceLocations("classpath:/thymeleaf/js/");
+    }
+
+    @Bean
+    public ClassLoaderTemplateResolver secondaryTemplateResolver() {
+        ClassLoaderTemplateResolver secondaryTemplateResolver = new ClassLoaderTemplateResolver();
+        secondaryTemplateResolver.setPrefix("thymeleaf/templates/");
+        secondaryTemplateResolver.setSuffix(".html");
+        secondaryTemplateResolver.setTemplateMode(TemplateMode.HTML);
+        secondaryTemplateResolver.setCharacterEncoding("UTF-8");
+        secondaryTemplateResolver.setOrder(1);
+        secondaryTemplateResolver.setCheckExistence(true);
+
+        return secondaryTemplateResolver;
     }
 }
