@@ -1,6 +1,6 @@
-package com.cdgeekcamp.demo.repository;
+package com.cdgeekcamp.shijianxing.repository;
 
-import com.cdgeekcamp.demo.model.User;
+import com.cdgeekcamp.shijianxing.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

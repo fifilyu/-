@@ -1,8 +1,8 @@
-package com.cdgeekcamp.demo.util;
+package com.cdgeekcamp.shijianxing.util;
 
-import com.cdgeekcamp.demo.config.ApplicationConfig;
-import com.cdgeekcamp.demo.model.User;
-import com.cdgeekcamp.demo.service.UserService;
+import com.cdgeekcamp.shijianxing.config.ApplicationConfig;
+import com.cdgeekcamp.shijianxing.model.User;
+import com.cdgeekcamp.shijianxing.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.DefaultRedirectStrategy;

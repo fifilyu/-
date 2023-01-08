@@ -1,4 +1,4 @@
-package com.cdgeekcamp.demo.config;
+package com.cdgeekcamp.shijianxing.config;
 
 import happyjava.HappyLog;
 import org.springframework.beans.factory.annotation.Value;

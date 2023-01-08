@@ -1,4 +1,4 @@
-package com.cdgeekcamp.demo.util;
+package com.cdgeekcamp.shijianxing.util;
 
 public class TbConstants {
     public interface Roles {

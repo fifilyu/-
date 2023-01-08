@@ -1,4 +1,4 @@
-package com.cdgeekcamp.demo.util;
+package com.cdgeekcamp.shijianxing.util;
 
 import com.talanlabs.avatargenerator.*;
 import com.talanlabs.avatargenerator.cat.CatAvatar;

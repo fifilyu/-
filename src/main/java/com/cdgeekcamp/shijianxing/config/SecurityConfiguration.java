@@ -1,6 +1,6 @@
-package com.cdgeekcamp.demo.config;
+package com.cdgeekcamp.shijianxing.config;
 
-import com.cdgeekcamp.demo.util.LoginUrlAuthenticationSuccessHandler;
+import com.cdgeekcamp.shijianxing.util.LoginUrlAuthenticationSuccessHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

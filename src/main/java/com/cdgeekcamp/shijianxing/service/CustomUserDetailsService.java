@@ -1,7 +1,7 @@
-package com.cdgeekcamp.demo.service;
+package com.cdgeekcamp.shijianxing.service;
 
-import com.cdgeekcamp.demo.model.User;
-import com.cdgeekcamp.demo.repository.UserRepository;
+import com.cdgeekcamp.shijianxing.model.User;
+import com.cdgeekcamp.shijianxing.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

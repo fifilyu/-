@@ -1,4 +1,4 @@
-package com.cdgeekcamp.demo.model;
+package com.cdgeekcamp.shijianxing.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

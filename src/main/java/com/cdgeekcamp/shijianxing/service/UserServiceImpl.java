@@ -1,11 +1,11 @@
-package com.cdgeekcamp.demo.service;
+package com.cdgeekcamp.shijianxing.service;
 
-import com.cdgeekcamp.demo.dto.UserDto;
-import com.cdgeekcamp.demo.model.Role;
-import com.cdgeekcamp.demo.model.User;
-import com.cdgeekcamp.demo.repository.RoleRepository;
-import com.cdgeekcamp.demo.repository.UserRepository;
-import com.cdgeekcamp.demo.util.TbConstants;
+import com.cdgeekcamp.shijianxing.dto.UserDto;
+import com.cdgeekcamp.shijianxing.model.Role;
+import com.cdgeekcamp.shijianxing.model.User;
+import com.cdgeekcamp.shijianxing.repository.RoleRepository;
+import com.cdgeekcamp.shijianxing.repository.UserRepository;
+import com.cdgeekcamp.shijianxing.util.TbConstants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.cdgeekcamp.demo.dto;
+package com.cdgeekcamp.shijianxing.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

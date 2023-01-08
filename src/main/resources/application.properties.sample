@@ -27,7 +27,7 @@ spring.redis.host=localhost
 spring.redis.password=
 spring.redis.port=6379
 # 用户头像保存目录
-application.config.user-photo-save-dir=/var/lib/spring-boot-demo/images
+application.config.user-photo-save-dir=/var/lib/shi-jian-xing/images
 # 日志配置文件路径
 logging.config=classpath:logback.xml
 # 默认使用 resource/thymeleaf/templates/，禁用SpringBoot默认thymeleaf模板位置

@@ -1,8 +1,8 @@
-package com.cdgeekcamp.demo.web;
+package com.cdgeekcamp.shijianxing.web;
 
-import com.cdgeekcamp.demo.dto.UserDto;
-import com.cdgeekcamp.demo.model.User;
-import com.cdgeekcamp.demo.service.UserService;
+import com.cdgeekcamp.shijianxing.dto.UserDto;
+import com.cdgeekcamp.shijianxing.model.User;
+import com.cdgeekcamp.shijianxing.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
