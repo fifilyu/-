@@ -66,3 +66,5 @@ Spring Boot + Spring Security + Thymeleaf + MySQL数据库的Spring Boot示例�
 ### 操作四、本地访问
 
 浏览器中访问URL： http://{服务器IP地址}:8080
+
+> `spring-boot-security-thymeleaf-mysql-demo` 启动时会重建三张用户表（`roles`、`users`、`users_roles`），所有测试数据都将在启动时被清空（相关配置见：application.properties->`spring.jpa.hibernate.ddl-auto`）
