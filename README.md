@@ -14,6 +14,8 @@ Spring Boot + Spring MVC + Spring Security + Thymeleaf + Redis + MySQL的Java示
 4. 随机用户头像
 5. 显示登录时间
 6. Redis HTTP Session
+7. 自动创建数据库
+8. 从SQL文件（`resources/schema.sql`）重建数据表（清除原有数据）
 
 ## 系统要求
 
@@ -25,30 +27,24 @@ Spring Boot + Spring MVC + Spring Security + Thymeleaf + Redis + MySQL的Java示
 
 ### 运行步骤
 
-1. 在MySQL中创建测试数据库：`shi-jian-xing`
-2. 下载或克隆本项目
-3. 进入项目目录：`cd shi-jian-xing`
-4. 准备默认程序配置文件，复制配置文件模板（*application.properties.sample*）为 *application.properties*：
+1. 下载或克隆实践星源代码
+2. 切换至实践星目录：`cd shi-jian-xing`
+3. 准备默认程序配置文件，复制配置文件模板（*application.properties.sample*）为 *application.properties*：
    1. 配置文件模板：src/main/resources/application.properties.sample
    2. 默认配置文件：src/main/resources/application.properties
    3. 修改 *application.properties* 文件中的MySQL数据库和Redis连接参数
-5. 准备默认日志配置文件，复制配置文件模板（*logback.xml.sample*）为 *logback.xml*：
+4. 准备默认日志配置文件，复制配置文件模板（*logback.xml.sample*）为 *logback.xml*：
    1. 配置文件模板：src/main/resources/logback.xml.sample
    2. 默认配置文件：src/main/resources/logback.xml
    3. 更新日志文件路径：`sed -i 's#/var/#var/' src/main/resources/logback.xml`
-6. 运行项目：`mvn spring-boot:run`
-7. 在浏览器中访问URL： http://localhost:8080
+5. 运行项目：`mvn spring-boot:run`
+6. 在浏览器中访问URL： http://localhost:8080
 
 ### 部署发布
 
-### 操作一、Linux服务器
+### 操作一、本地
 
-1. 在MySQL中创建生产数据库：`shi-jian-xing`
-2. 创建Jar文件存放目录：`mkdir -p /data/web/`
-
-### 操作二、本地
-
-1. 进入项目目录
+1. 进入实践星源代码目录：`cd shi-jian-xing`
 2. 上传程序配置文件到服务器：`scp src/main/resources/application.properties.sample root@{服务器IP地址}:/data/web/application.properties`
 3. 上传日志配置文件到服务器：`scp src/main/resources/logback.xml.sample root@{服务器IP地址}:/data/web/logback.xml`
 4. 打包Jar文件：`mvn package`
@@ -66,5 +62,3 @@ Spring Boot + Spring MVC + Spring Security + Thymeleaf + Redis + MySQL的Java示
 ### 操作四、本地访问
 
 浏览器中访问URL： http://{服务器IP地址}:8080
-
-> 实践星启动时会重建三张用户表（`roles`、`users`、`users_roles`），所有测试数据都将在启动时被清空（相关配置见：application.properties->`spring.jpa.hibernate.ddl-auto`）
