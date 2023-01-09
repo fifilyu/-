@@ -3,7 +3,7 @@
 # Spring Boot 最新版 Common Application Properties
 # https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html
 
-# 默认HTTP服务端口
+# HTTP服务器端口
 server.port=8080
 # JPA
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
