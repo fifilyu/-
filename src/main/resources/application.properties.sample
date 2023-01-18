@@ -28,7 +28,7 @@ spring.datasource.hikari.connection-test-query=SELECT 1
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 # MySQL连接参数
 # MySQL连接字符串，包括数据库名称（如果数据库不存在，则自动创建）
-spring.datasource.url=jdbc:mysql://localhost/shi-jian-xing?createDatabaseIfNotExist=True&serverTimezone=Asia/Shanghai&useUnicode=yes&characterEncoding=UTF-8
+spring.datasource.url=jdbc:mysql://localhost/sjx?createDatabaseIfNotExist=True&serverTimezone=Asia/Shanghai&useUnicode=yes&characterEncoding=UTF-8
 # MySQL用户名称
 spring.datasource.username=root
 # MySQL用户密码
@@ -65,7 +65,7 @@ spring.redis.jedis.pool.min-idle=0
 # 实践星未使用Spring Data Redis时，启动有警告。设置为false只为消除启动警告
 spring.data.redis.repositories.enabled=false
 # 用户头像保存目录
-application.config.user-photo-save-dir=/var/lib/shi-jian-xing/images
+application.config.user-photo-save-dir=/var/lib/sjx/images
 # 日志配置文件路径
 logging.config=classpath:logback.xml
 # 默认使用 resource/thymeleaf/templates/，禁用SpringBoot默认thymeleaf模板位置
