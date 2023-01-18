@@ -98,7 +98,6 @@
 				<excludes>
 					<exclude>*.xml</exclude>
 					<exclude>*.properties</exclude>
-					<exclude>*.sql</exclude>
 				</excludes>
 			</resource>
 		</resources>
