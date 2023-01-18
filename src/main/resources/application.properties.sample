@@ -67,7 +67,7 @@ spring.redis.jedis.pool.min-idle=0
 # 实践星未使用Spring Data Redis时，启动有警告。设置为false只为消除启动警告
 spring.data.redis.repositories.enabled=false
 # 用户头像保存目录
-application.config.user-photo-save-dir=/var/lib/sjx/images
+application.config.user-photo-save-dir=/var/lib/sjx/images/avatar
 # 日志配置文件路径
 logging.config=classpath:logback.xml
 # 默认使用 resource/thymeleaf/templates/，禁用SpringBoot默认thymeleaf模板位置
