@@ -1,6 +1,6 @@
 package com.cdgeekcamp.shijianxing.config;
 
-import happyjava.HappyLog;
+import io.github.happyjava.HappyLog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
