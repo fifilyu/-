@@ -55,7 +55,7 @@ Spring Boot + Spring MVC + Spring Security + Thymeleaf + Redis + MySQL的Java示
 1. 修改 */data/web/application.properties* 文件中的MySQL数据库和Redis连接参数
 2. */data/web/logback.xml* 文件中的日志文件路径默认不修改
 3. 测试运行 `java -Dspring.config.location=/data/web/application.properties -jar /data/web/shi-jian-xing-0.0.1.jar`
-4. 创建Java系统服务(`SysV init scripts` 或者 `systemd`)，如CentOS7配置后使用 `systemtcl start shi-jian-xing` 启动
+4. 创建Java系统服务(`SysV init scripts` 或者 `systemd`)，如CentOS7配置后使用 `systemctl start shi-jian-xing` 启动
    1. 具体配置方式本文不详细说明，请参考相关教程
 5. 配置系统防火墙，开放8080端口
 
