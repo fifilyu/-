@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @SuppressWarnings("unused")
 @Configuration
 public class ApplicationConfig {
-    private static final HappyLog log = new HappyLog(MvcConfig.class);
+    private static final HappyLog log = new HappyLog(ApplicationConfig.class);
 
     @Value("${application.config.user-photo-save-dir}")
     private String userPhotoSaveDir;

@@ -11,6 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.thymeleaf.templatemode.TemplateMode;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 
+import javax.annotation.Nonnull;
 import java.io.File;
 
 @SuppressWarnings("unused")
@@ -26,7 +27,7 @@ public class MvcConfig implements WebMvcConfigurer {
     private ConfigurableApplicationContext ctx;
 
     @Override
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+    public void addResourceHandlers(@Nonnull ResourceHandlerRegistry registry) {
         final String photoSavePath = applicationConfig.getUserPhotoSaveDir();
         File folder = new File(photoSavePath);
 

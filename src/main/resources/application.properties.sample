@@ -2,7 +2,6 @@
 # https://docs.spring.io/spring-boot/docs/2.7.6/reference/html/application-properties.html
 # Spring Boot 最新版 Common Application Properties
 # https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html
-
 # HTTP服务器监听网络
 server.address=127.0.0.1
 # HTTP服务器端口

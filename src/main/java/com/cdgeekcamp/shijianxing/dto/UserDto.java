@@ -8,6 +8,7 @@ import lombok.Setter;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 
+@SuppressWarnings("unused")
 @Getter
 @Setter
 @NoArgsConstructor
