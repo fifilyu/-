@@ -11,15 +11,15 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>11</java.version>
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
+		<java.version>17</java.version>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.6</version>
+		<version>3.2.4</version>
 		<relativePath/>
 	</parent>
 
@@ -46,7 +46,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.thymeleaf.extras</groupId>
-			<artifactId>thymeleaf-extras-springsecurity5</artifactId>
+			<artifactId>thymeleaf-extras-springsecurity6</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -87,7 +87,7 @@
 		<dependency>
 			<groupId>io.github.fifilyu</groupId>
 			<artifactId>happy-java</artifactId>
-			<version>0.0.4</version>
+			<version>0.1.0</version>
 		</dependency>
 	</dependencies>
 
@@ -96,8 +96,6 @@
 			<resource>
 				<directory>src/main/resources</directory>
 				<excludes>
-					<exclude>**/*.xml</exclude>
-					<exclude>**/*.properties</exclude>
 					<exclude>**/*.sample</exclude>
 				</excludes>
 			</resource>
@@ -111,6 +109,12 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
 				<version>3.3.0</version>
+				<configuration>
+					<excludes>
+						<exclude>**/*.xml</exclude>
+						<exclude>**/*.properties</exclude>
+					</excludes>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
