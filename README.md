@@ -2,7 +2,7 @@
 
 ## 介绍
 
-Spring Boot + Spring MVC + Spring Security + Thymeleaf + Redis + MySQL的Java示例性项目，用快速上手SpringBoot框架
+Spring Boot（3.2.4） + Spring MVC + Spring Security + Thymeleaf + Redis + MySQL的Java示例性项目，用快速上手SpringBoot框架
 
 本项目基于 [registration-login-spring-boot-security-thymeleaf](https://github.com/knowledgefactory4u/registration-login-spring-boot-security-thymeleaf) 。
 
