@@ -19,7 +19,7 @@ Spring Boot + Spring MVC + Spring Security + Thymeleaf + Redis + MySQL的Java示
 
 ## 系统要求
 
-* Java 11+
+* Java 17+
 * MySQL 5.7+
 * Redis 3.2+
 
